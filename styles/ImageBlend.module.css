@@ -1,0 +1,56 @@
+/* .imageWrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1rem auto;
+  }
+  
+  .imageWrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, transparent 20%, black 100%);
+    pointer-events: none;
+  }
+  
+  .image {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+   */
+  
+
+
+
+
+
+   .imageWrapper {
+    position: relative;
+    width: 200px; /* Increased size for better visibility */
+    height: 200px;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%; /* Ensures circular shape */
+    overflow: hidden; /* Prevents any overflow effects */
+  }
+  
+  .imageWrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, transparent 50%, rgba(0, 0, 0, 0.3) 90%);
+    pointer-events: none;
+  }
+  
+  .image {
+    width: 10000px;
+    height: 100%;
+    border-radius: 20%;
+    object-fit: cover;
+  }
+  
